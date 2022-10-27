@@ -30,22 +30,22 @@ public class DieselCar extends AFuelCar {
     public int getRegistrationFee() {
 
         if (kilometerLitre < 5) {
-            return 10470 + hasParticleFilter();
+            return 10470 + hasParticleFilter()+15260;
 
         } else if (kilometerLitre < 10) {
-            return 5550 + hasParticleFilter();
+            return 5550 + hasParticleFilter() + 2770;
 
 
         } else if (kilometerLitre < 15) {
-            return 2340 + hasParticleFilter();
+            return 2340 + hasParticleFilter() + 1850;
 
         } else if (kilometerLitre < 20) {
-            return 1050 + hasParticleFilter();
+            return 1050 + hasParticleFilter() + 1390;
 
 
 
         } else if (kilometerLitre <= 50) {
-            return 330 + hasParticleFilter();
+            return 330 + hasParticleFilter() + 130;
 
         }
 
